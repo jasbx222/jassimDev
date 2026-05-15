@@ -10,3 +10,11 @@ jobs:
     steps:
       - name: Print Hello
         run: echo "hello world"
+      
+      - name: check out repo 
+        uses: actions/checkout@v6.0.2
+
+        
+      - name: files repo 
+        run: ls -la
+      

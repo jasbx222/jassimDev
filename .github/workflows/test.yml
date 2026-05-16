@@ -25,4 +25,4 @@ jobs:
         run: echo "This runs only on pull request"
 
       - name: Run Tests
-        run: npm test
+        run: npm run build

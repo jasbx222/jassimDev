@@ -1,0 +1,19 @@
+on:
+  workflow_dispatch:
+    inputs:
+      env:
+        description: "This is test env default"
+        required: true
+        default: "stage"
+        type: choice
+        options:
+          - stage
+          - production
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy app
+        run: echo "deploying"

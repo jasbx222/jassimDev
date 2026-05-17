@@ -16,4 +16,4 @@ jobs:
 
     steps:
       - name: Deploy app
-        run: echo "deploying"
+        run: echo "the env is ${{inputs.env}}"
